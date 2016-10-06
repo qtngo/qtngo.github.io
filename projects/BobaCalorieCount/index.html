@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<!--Reset Style. Use 1x css file. Use 1x js folder, need to get this to work-->
+<head>
+	<title>Welcome to Boba Calorie Count!!</title>
+	<link rel="stylesheet" href="css/reset.css" media="screen" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lakki+Reddy" rel="stylesheet">
+
+	<script src="js/jquery-3.1.0.js">
+
+	</script>
+</head>
+
+
+<!--Think Chipotle menu going from horizontal to vertical for boba calorie counts-->
+<body>
+	<!--Website Name, Logo-->
+	<header class="cHeaderBlock">
+		<h1><p class="logo">Boba Calorie Count</p></h1>
+	</header>
+
+
+	<!--(0) Use DIV as background, lvl1 Depth basis-->
+	<div class="dFullPage">
+	<!--TEST DIV, delete this line after -->
+	
+		<!--START: (1) Cup Size-->	
+		<!--text, 3 cup buttons, next button-->
+		<a name="Step01"></a>
+		<section class="sCup">
+			<h2>Step 01: Pick Your Size.</h2>
+		
+			<p>BobaCalorieCount estimates the values of 8oz (S), 12oz (M), & 16oz (L) cups respectively.</p>
+			<p>Please choose your cup size and click the "Next" button in this section to continue.</p>	
+			<br>
+
+			<!--clickable buttons for the 3 cup sizes (S,M,L)-->
+			<div>
+				<button><img id="boba-sizing" src="images/boba-s.png"></button>
+				<button><img id="boba-sizing" src="images/boba-m.png"></button>
+				<button><img id="boba-sizing" src="images/boba-l.png"></button>
+			</div>
+
+			<br>
+			<p id="quoteText"><i>"Each cup of tea represents an imaginary voyage."</i></p>
+			<p id="quoteAuthor"> - Catherine Douzel</p>
+
+			<!--Code for "NEXT" button, re-use for each section #1-4-->
+			<div align="right" style="margin:20px">
+				<a class="nextbutton" href="#Step02">Next</a>
+			</div>
+		</section>
+		<!--END: (1)-->
+
+	
+		<!--START: (2) Drink Type-->
+		<!--text, 3 columns (a) IceTea (b) MilkTea (c) Smoothie, radio btn (single selection)?, next button-->
+		<section class="sDrink">
+			<h2><a name="Step02">Step 02: Pick Your Drink.</a></h2>
+			
+			<p>Choose which drink you would like to get the calorie count for. There are 12 different flavors under each of the 3 drink types. (Note: You will only be able to choose one drink to get a calorie count for.)</p>
+			<p>Please click the "Next" button to move forward to the next section.</p>
+			
+			<br>
+			
+			<!--Below are the 3x aside/fieldset for: (a), (b), & (c)-->
+			<div>
+				<!--(a) Ice Tea:-->
+				<fieldset>
+					<legend>Ice Tea:</legend>
+						<input type="radio" name="DrinkType" value="iceBlackTea">Black Tea<br>
+						<input type="radio" name="DrinkType" value="iceGreenTea">Green Tea<br>
+						<input type="radio" name="DrinkType" value="iceHoney">Honey<br>
+						<input type="radio" name="DrinkType" value="iceJasmine">Jasmine<br>
+						<input type="radio" name="DrinkType" value="iceKiwi">Kiwi<br>
+						<input type="radio" name="DrinkType" value="iceLychee">Lychee<br>
+						<input type="radio" name="DrinkType" value="iceMaCha">MaCha<br>
+						<input type="radio" name="DrinkType" value="iceMango">Mango<br>
+						<input type="radio" name="DrinkType" value="icePassionFruit">Passion Fruit<br>
+						<input type="radio" name="DrinkType" value="icePeach">Peach<br>
+						<input type="radio" name="DrinkType" value="icePlum">Plum<br>
+						<input type="radio" name="DrinkType" value="iceRose">Rose<br>
+				</fieldset>
+				
+				<!--(b) Milk Tea:-->
+				<fieldset>
+					<legend>Milk Tea:</legend>
+						<input type="radio" name="DrinkType" value="milkTea">Milk Tea<br>
+						<input type="radio" name="DrinkType" value="milkGreenTea">Milk Green Tea<br>
+						<input type="radio" name="DrinkType" value="milkAlmond">Almond<br>
+						<input type="radio" name="DrinkType" value="milkCoffee">Coffee<br>
+						<input type="radio" name="DrinkType" value="milkHazelnut">Hazelnut<br>
+						<input type="radio" name="DrinkType" value="milkHoneyDew">Honey Dew<br>
+						<input type="radio" name="DrinkType" value="milkPapaya">Papaya<br>
+						<input type="radio" name="DrinkType" value="milkPeach">Peach<br>
+						<input type="radio" name="DrinkType" value="milkRose">Rose<br>
+						<input type="radio" name="DrinkType" value="milkTaro">Taro<br>
+						<input type="radio" name="DrinkType" value="milkThai">Thai<br>
+						<input type="radio" name="DrinkType" value="milkVanilla">Vanilla<br>
+				</fieldset>
+				
+				<!--(c) Slush:-->
+				<fieldset>
+					<legend>Slushie:</legend>
+						<input type="radio" name="DrinkType" value="slushGreenBean">Green Bean<br>
+						<input type="radio" name="DrinkType" value="slushHoneyDew">Honey Dew<br>
+						<input type="radio" name="DrinkType" value="slushLychee">Lychee<br>
+						<input type="radio" name="DrinkType" value="slushMaCha">MaCha<br>
+						<input type="radio" name="DrinkType" value="slushMocha">Mocha<br>
+						<input type="radio" name="DrinkType" value="slushPassionFruit">Passion Fruit<br>
+						<input type="radio" name="DrinkType" value="slushPeach">Peach<br>
+						<input type="radio" name="DrinkType" value="slushPineapple">Pineapple<br>
+						<input type="radio" name="DrinkType" value="slushRedBean">Red Bean<br>
+						<input type="radio" name="DrinkType" value="slushSesame">Sesame<br>
+						<input type="radio" name="DrinkType" value="slushStrawberry">Strawberry<br>
+						<input type="radio" name="DrinkType" value="slushTaro">Taro<br>
+				</fieldset>
+			</div>
+			
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			
+			<!--Code for "NEXT" button, re-use for each section #1-4-->
+			<div align="right" style="margin:20px">
+				<a class="nextbutton" href="#Step03">Next</a>
+			</div>
+
+		</section>
+		<!--END: (2)-->
+
+		
+		<!--START: (3) Toppings-->
+		<!--text, 3 columns, checkboxes (multi-selection), next button-->
+		<section class="sTopping">
+			<h2><a name="Step03">Step 03: Pick Your Topping(s).</a></h2>
+		
+			<p>Here you can add up to 18 different toppings to your drink to help improve the accuracy of the calorie count.</p>
+			<p>Check off as many toppings as you like and then click the "Next" button once you're ready to move forward.</p>
+
+			<br>
+
+			<div>
+				<aside>
+					<input type="checkbox" name="Topping" value="topping">Aloe Vera<br>
+					<input type="checkbox" name="Topping" value="topping">Barley Powder<br>
+					<input type="checkbox" name="Topping" value="topping">Boba<br>
+					<input type="checkbox" name="Topping" value="topping">Condensed Milk<br>
+					<input type="checkbox" name="Topping" value="topping">Egg Pudding<br>
+					<input type="checkbox" name="Topping" value="topping">Mochi<br>			
+				</aside>			
+
+				<aside>
+					<input type="checkbox" name="Topping" value="toppingGreenBean">Green Bean<br>
+					<input type="checkbox" name="Topping" value="toppingRedBean">Red Bean<br>	
+					<input type="checkbox" name="Topping" value="topping">Jelly - Grass<br>
+					<input type="checkbox" name="Topping" value="topping">Jelly - Green Apple<br>
+					<input type="checkbox" name="Topping" value="topping">Jelly - Lychee<br>
+					<input type="checkbox" name="Topping" value="topping">Jelly - Passion Fruit<br>
+				</aside>			
+
+				<aside>
+					<input type="checkbox" name="Topping" value="topping">Chia Seed - Passion Fruit<br>	
+					<input type="checkbox" name="Topping" value="topping">Chia Seed - Peach<br>
+					<input type="checkbox" name="Topping" value="topping">Chia Seed - Strawberry<br>
+					<input type="checkbox" name="Topping" value="topping">Popping - Lychee<br>
+					<input type="checkbox" name="Topping" value="topping">Popping - Passion Fruit<br>
+					<input type="checkbox" name="Topping" value="topping">Popping - Strawberry<br>
+				</aside>
+			</div>
+
+			<br><br><br><br><br><br>
+
+			<!--Code for "NEXT" button, re-use for each section #1-4-->
+			<div align="right" style="margin:20px">
+				<a class="nextbutton" href="#Step04">Next</a>
+			</div>
+
+		</section>
+		<!--END: (3)-->
+
+
+		<!--START: (4) Sugar Level-->
+		<!--text, dragging radio scroll bar from 0% to 100% value split by 25%?, done button-->
+		<section class="sSugar">
+			<h2><a name="Step04">Step 04: What's Your Sugar Level?</a></h2>
+			
+			<p>This last part will allow you to adjust the sugar content of your drink. Feel free to move the slider either left or right. Note that the measurements are in 25% intervals.</p>
+			<p>Once you've chosen your sugar level, please hit the "Calculate" button below to get your total calorie count.</p>
+
+			<br>
+
+			<!--Pulled code for slider bar. Modified to jump 25%-->
+			<!--Original code @ http://webtutsdepot.com/2010/04/24/html-5-slider-input-tutorial/ (credited)-->
+			<div align="center">
+				<input style="width:500px" type="range" min="0" max="100" value="50" step="25" onchange="showValue(this.value)">
+				<span id="range">50</span>%	<!--show value in %-->
+
+				<script type="text/javascript">
+				function showValue(newValue)
+				{
+					document.getElementById("range").innerHTML=newValue;
+				}
+				</script>
+			</div>
+
+			<!--This needs to be the calculate button-->
+			<!--Code for "CALCULATE" button, jumps to the "Summary" afterwards	-->
+			<div align="right" style="margin:20px">
+				<a class="calculatebutton" href="#Summary">Calculate</a>
+			</div>
+
+		</section>
+		<!--END: (4)-->
+	
+
+		<!--Start: Calorie Count Summary, Total Calculation-->
+		<section class="sCalculate">
+			<h2><a name="Summary">Summary:</a></h2>
+			<h3>Your Total Calorie Count = ...</h3>
+		</section>
+		<!--END: Summary-->
+
+	</div>
+
+
+	<!--Footer, shows logo in smaller size, social icons, & copyright-->
+	<footer align="center">
+		<br>
+		<p class="logo" style="font-size:18px">Boba Calorie Count</p>
+		<div id="social-icon">
+			<a href="http://www.facebook.com" target="blank"><img src="images/fb-icon.png"></a>
+			<a href="http://www.twitter.com" target="blank"><img src="images/twit-icon.png"></a>
+			<a href="http://www.instagram.com" target="blank"><img src="images/insta-icon.png"></a>
+			<img src="images/share-icon.png">
+		</div>
+		<p id="copyright-text">Copyright 2016. BobaCalorieCount</p>
+	</footer>
+
+
+</body>
+
+</html>

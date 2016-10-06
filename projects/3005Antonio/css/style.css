@@ -1,0 +1,114 @@
+body{
+	font-family: Calibri;
+	margin: 20px;
+	background-color: peachpuff;
+	width:auto;
+}
+
+hr{
+	widows: auto;
+	height: 2px;
+	border: 0;
+	background-color: gray;
+}
+
+h1{
+	text-align:center; 
+	font-family:Calibri;
+	color:gray;
+	font-size:25px;
+}
+
+/* Headers for each section at size=h2 */
+h2{
+	padding:5px 5px 10px 20px;
+	background-color:rgba(0,0,0,0.1);
+	font-family: Calibri;
+	border:2px solid gray;
+	border-radius:10px;
+}
+
+ul{
+	/*padding: 10px;
+	background: rgba(0,0,0,0.2);*/
+	padding:5px 5px 10px 20px;
+	background-color:rgba(0,0,0,0.1);
+	font-family: Calibri;
+	border:2px solid gray;
+	border-radius:10px;
+}
+
+/* display the UL listed items into 2 columns (50%), starting on left side, used for description.html */
+/*li {
+ 	display: block;
+    width: 50%;
+    float: left;
+    list-style-type: circle;
+
+}*/
+
+/* location.html */
+#container ol{
+	width:auto;
+	background-color: blanchedalmond;
+	border:2px solid gray;
+}
+
+#googleMap {
+	border:2px solid gray;
+	border-radius:10px;
+}
+
+/* Sets Hiroko-banner to auto-size w/ browser */
+#banner{
+	max-width:100%;
+	border-radius:10px;
+}
+
+#home-body{
+	width: auto;
+	height:500px;
+	border:2px solid gray;
+	border-radius:10px;
+}
+
+/* CSS for the navigation menu under the banner image */
+.NavMenu nav{
+	/*display:inline;*/
+	padding:10px;
+	background-color: rgba(0,0,0,0.1);
+	text-align: center;
+	border:2px solid gray;
+	border-radius:10px;
+}
+
+/* Contact Page */
+#profile-pix{
+	margin: 40px 0px 0px 0px;
+	border: 2px solid gray;
+	border-radius: 10px;
+}
+
+#ContactImage {
+	width:300px;
+	background: blanchedalmond;
+	border: 2px solid gray;
+	border-radius:10px;
+}
+
+/* Photos.html - making the image into a thumb nail size */
+#ThumbPhoto img{
+	width:50px;
+	height:50px;
+}
+
+
+
+
+
+
+
+
+
+
+

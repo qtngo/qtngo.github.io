@@ -1,0 +1,306 @@
+body{
+	width:800px;
+	padding:6px;
+	font-family:"Calibri";
+	padding-left:25%;
+	padding-right:25%;
+}
+
+/*header = banner, footer = final calculations*/
+header, footer{
+	width:798px;
+	color:white;
+	background:#606161;	/*lightgrey*/
+	height:100x;
+	border:2px solid blue;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+header{
+	margin-bottom:2px;
+	background-image:url("../images/red-boba.jpg");
+	background-size:125%;
+}
+
+footer{
+	/*margin-top:10px;*/
+	background-image:url("../images/wall-boba8.jpg");
+	background-size:900%;	
+}
+
+/*div used as middle tier background level section*/
+.dFullPage{
+	background:#f0efef;
+	width:800px;
+/*	border:2px solid red;*/
+}
+
+p, fieldset, aside{
+	font-size: 13px;
+	font-weight: lighter;
+}
+
+/*each section #1-4, should have same stle/feel.*/
+section{
+	width:758px; /*793+5=798*/
+	border:2px solid red;
+	margin-bottom:5px;
+	padding-left:20px;
+	padding-right:20px;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+/*Inside Step 02, the 3 drink types: Ice Tea, Milk Tea, Slushie*/
+fieldset{
+	width:27%; /*29% value used for aside over fieldset*/
+	/*height:125px;*/
+	margin-left:1.5%;
+	margin-right:1.5%;
+	border:2px dotted blue;
+	float:left;
+	padding-left:5px;
+	border-radius: 7.5px;
+}
+
+/*Inside Step 03, the 3 columns for the Toppings*/
+aside{
+	width:30%;
+	float:left;
+	padding-left:15px;
+	padding-right:10px;
+}
+
+/*Next Button - All attributes used in each section 1-4 (next button)*/
+.nextbutton, .calculatebutton{
+	font-family:"Calibri";
+	display:block;
+	width:100px;
+	height:25px;
+	border:3px solid #606161;	/*lightgrey*/
+	background: #f9e42e;		/*yellow*/
+	color: #033048;				/*darkblue*/
+	font-weight:bolder;
+	font-style: 14px;
+	border-radius: 5px;
+	text-align:center;
+	padding-top:5px;
+	text-decoration: none;		/*removes underline from the href="#"*/
+
+}
+
+/*Next Button - Hover over, you'll notice some nice changes in the button*/
+.nextbutton:hover{
+	background: #008B8B;		/*darkcyan*/
+	border:3px solid #121212;	/*almostblack*/
+	transition:1s all;
+	font-weight: bolder;
+	color: #483D8B;				/*darkstateblue*/
+	cursor:pointer;
+}
+
+/*Calculate Button - used for the next 2*/
+.calculatebutton{
+	background:#033048;
+	color:white;
+}
+
+.calculatebutton:hover{
+	transition:1s all;
+	background:green;
+	color:darkblue;
+	cursor:pointer;	
+}
+
+h1{
+	text-align:center;
+}
+
+.logo{
+	font-size:24px;
+	font-weight:bolder; /*bolder = 900*/
+	opacity:0.6;
+	font-family:'Lakki Reddy', bolder;
+
+}
+
+#quoteText{
+	font-weight: lighter;
+	font:italic;
+	font-size:18px;
+	opacity: 0.3;
+	text-align: center;
+}
+
+#quoteAuthor{
+	font-weight: 500; /*sem-bold = 600*/
+	font-size:18px;
+	opacity: 0.3;
+	text-align: right;
+}
+
+/*text header for each of the #1-4 sections & Summary*/
+h2{
+	font-size:20px;
+	font-weight:700;
+	font-family: "Arial";
+}
+
+/*Text inside of the Summary section*/
+h3{
+	font-family:cursive;
+	font-weight: lighter;
+	opacity:0.6;
+}
+
+/*this would have been h3*/
+legend{
+	font-weight:bold;
+	font-family:"Calibri";
+	text-decoration: underline;
+	font-style: italic;
+	font-weight:900;
+
+}
+
+/*Inside Step01 - the 3 boba button (IMG - S, M, L), below are the attributes to them.*/
+/*Used for "button", "button:hover", & "boba-sizing"*/
+button{
+	border:2px solid black;
+	border-radius:7.5px;
+	background: clear;
+	margin-left:16%;
+}
+
+
+button:hover{
+	cursor:pointer;
+	background-color: white;
+	transition:1s all;
+	border:2px solid white;
+}
+
+
+#boba-sizing{
+	width:70px;
+	height:90px;
+	border-radius:7.5px;
+}
+
+
+/*Footer area - Only for Copyright, social media and smaller logo*/
+#social-icon img{
+	width:30px;
+	height:30px;
+}
+
+#copyright-text{
+	font-size: 9px;
+	font-weight: 400;
+}
+
+
+
+/*(1) Pick your Cup Size*/
+.sCup{
+	margin-top:2px;
+	background-image:url("../images/wall-boba8.jpg");
+
+	background-size:1300%;	
+}
+
+/*(2) Pick your Drink Type*/
+.sDrink{	
+	background-image: url("../images/wall-boba6.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+/*(3) Pick your Topping*/
+.sTopping{
+	background-image: url("../images/wall-boba2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+/*(4) Pick your Sugar Level*/
+.sSugar{
+
+}
+
+.sCalculate{
+	background-image: url("../images/wall-boba9.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+/*aside, .a files are all used in #2 Drink Type.*/
+/*
+
+
+
+  <section>
+
+  <br>
+    <aside>
+    </aside>
+
+    <aside>
+    </aside>
+
+    <aside>
+    </aside>
+  </section>
+
+    section, aside{
+      margin-bottom:15px;
+      float:left;
+      border:1px solid black;
+      background:green;
+    }
+
+    section {
+      height:400px;
+      width:47%;
+      margin-left:1.5%;
+      margin-right:1.5%;
+    }
+
+    aside {
+      width:30.3%;
+      height:125px;
+      margin-left:1.5%;
+      margin-right:1.5%;
+    }
+
+
+    section, aside{
+      margin-bottom:15px;
+      float:left;
+      border:1px solid black;
+      background:green;
+    }
+
+    section {
+      height:400px;
+      width:47%;
+      margin-left:1.5%;
+      margin-right:1.5%;
+    }
+
+    aside {
+      width:30.3%;
+      height:125px;
+      margin-left:1.5%;
+      margin-right:1.5%;
+    }
+*/
+
+
+
+
