@@ -1,0 +1,160 @@
+body{
+	width:100%;
+	height:100%;
+	font-family: 'Calibri';
+}
+
+header{
+	margin:20px;
+	font-family: 'Press Start 2P';
+	font-size:30px;
+	opacity:0.6;
+}
+
+select, button {
+  height:30px;
+  border-radius:10px;
+  font-size:16px;
+  margin:10px;
+}
+
+form{
+	width:100%;
+	height:auto;
+}
+
+p {
+	margin:10px;
+}
+
+#pick-pokemon, 
+#add-pokemon, 
+#evolved-pokemon, 
+#final-pokemon {
+	color:black;
+	font-size:50px;
+	opacity:0.4;
+	font-family: 'Press Start 2P';
+}
+
+.bg-snorlax,
+.bg-bulbasaur,
+.bg-charmander,
+.bg-squirtle,
+.bg-pikachu,
+.bg-jigglypuff,
+.bg-psyduck,
+.bg-slowpoke,
+.bg-magikarp,
+.bg-eevee,
+.bg-ivysaur,
+.bg-charmeleon,
+.bg-wartortle,
+.bg-raichu,
+.bg-wigglytuff,
+.bg-golduck,
+.bg-slowbro,
+.bg-gyarados,
+.bg-flareon,
+.bg-jolteon,
+.bg-vaporeon,
+.bg-venusaur,
+.bg-charizard,
+.bg-blastoise,
+.bg-slowking,
+.bg-pokeball {
+	background-position:center top;
+	background-repeat:no-repeat;
+	/*background-size:contain;*/	/*auto-fit to browser width*/
+	background-size:50%;
+}
+
+/*BG Changes based on Pokemon Selection + ADD btn*/
+.bg-bulbasaur{
+	background-image: url("../pokemon/bulbasaur.jpg");
+}
+.bg-charmander{
+	background-image: url("../pokemon/charmander.jpg");
+}
+.bg-squirtle{
+	background-image: url("../pokemon/squirtle.jpg");
+}
+.bg-pikachu{
+	background-image: url("../pokemon/pikachu.jpg");
+}
+.bg-jigglypuff{
+	background-image: url("../pokemon/jigglypuff.jpg");
+}
+.bg-psyduck{
+	background-image: url("../pokemon/psyduck.jpg");
+}
+.bg-slowpoke{
+	background-image: url("../pokemon/slowpoke.jpg");
+}
+.bg-magikarp{
+	background-image: url("../pokemon/magikarp.jpg");
+}
+.bg-eevee{
+	background-image: url("../pokemon/eevee.jpg");
+}
+.bg-snorlax{
+	background-image: url("../pokemon/snorlax.jpg");
+}
+
+/*EVOLVE - LVL2*/
+.bg-ivysaur{
+	background-image: url("../pokemon/ivysaur.jpg");
+}
+.bg-charmeleon{
+	background-image: url("../pokemon/charmeleon.jpg");
+}
+.bg-wartortle{
+	background-image: url("../pokemon/wartortle.jpg");
+}
+.bg-raichu{
+	background-image: url("../pokemon/raichu.jpg");
+}
+.bg-wigglytuff{
+	background-image: url("../pokemon/wigglytuff.jpg");
+}
+.bg-golduck{
+	background-image: url("../pokemon/golduck.jpg");
+}
+.bg-slowbro{
+	background-image: url("../pokemon/slowbro.jpg");
+}
+.bg-gyarados{
+	background-image: url("../pokemon/gyarados.jpg");
+}
+
+/*Eevee has multiple random() lvl2 evolutions.*/
+.bg-flareon{
+	background-image: url("../pokemon/flareon.jpg");
+}
+.bg-jolteon{
+	background-image: url("../pokemon/jolteon.jpg");
+}
+.bg-vaporeon{
+	background-image: url("../pokemon/vaporeon.jpg");
+}
+
+/*Final Evolution - lvl3*/
+.bg-venusaur{
+	background-image: url("../pokemon/venusaur.jpg");
+}
+.bg-charizard{
+	background-image: url("../pokemon/charizard.jpg");
+}
+.bg-blastoise{
+	background-image: url("../pokemon/blastoise.jpg");
+}
+.bg-slowking{
+	background-image: url("../pokemon/slowking.jpg");
+}
+
+/*No evolution or not chosen. default.*/
+.bg-pokeball{
+	background-image: url("../pokemon/pokeball.png");
+}
+
+

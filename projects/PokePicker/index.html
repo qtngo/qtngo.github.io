@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>PokePicker.Net</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>PokePicker.Net</h1>
+	</header>
+	<p>
+		Pick a Pokemon from the dropdown below and see whats next.
+		<br> 1) Use the dropdown to select a Pokemon
+		<br> 2) Click [Add (Level 1)] button to see chosen pokemon.
+		<br> 3) Click [Evolve (Level 2)] button to evolve it (if pokemon is able to).
+		<br> 4) Click [Final Evo. (Level 3)] button to see 3rd level evolution (if pokemon has one).
+	</p>
+	<p><i>Image (c): <a href="http://pokemondb.net/pokedex/national">PokemonDB - PokeDex</a></i></p>
+
+	<form>
+		<select type="text" id="new-pokemon"></select>
+
+		<button id="btn-add" title="add the selected pokemon">Add (Level 1)</button>
+
+		<button id="btn-evolve" title="click to see if selected pokemon can be evolved">Evolve (Level 2)</button>
+
+		<button id="btn-final" title="click to see if selected pokemon has a 3rd lvl evolution">Final Evo. (Level 3)</button>
+	</form>
+
+	<p align="center" id="pick-pokemon"></p>
+	<!--
+	<p id='add-pokemon'></p>
+	<p id='evolved-pokemon'></p>
+	<p id='final-pokemon'></p>
+	-->
+
+	<footer>
+		
+	</footer>
+
+	<!--Load JS/JQ scripts-->
+	<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

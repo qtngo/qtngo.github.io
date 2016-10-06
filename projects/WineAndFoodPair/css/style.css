@@ -1,0 +1,114 @@
+/*Width of main Areas*/
+header, nav, section, aside, footer{
+	width:1230px;
+}
+
+body{
+	padding-left:10%;
+	padding-right:10%;
+}
+/*Header with the URL info*/
+header{
+	height:100px;
+	/*background:yellow;*/
+	background-image: url("../images/bgheader.png");
+	text-align: center;
+	font-family:Playball;
+	font-size:70px;
+	font-style:italic;
+	font-weight:550;
+	/*float:left;*/
+	/*opacity:0.4;*/
+	color:darkkhaki;
+}
+
+/*Food Buttons*/
+nav {
+	height:135px;
+	background-color: gray;
+}
+
+/*Arrow Design section - Hidden by default*/
+section{
+	height:490px;
+	/*width:1080x;*/
+	/*background:orange;*/
+	background-image: url("../images/bgblank.png");
+	background-repeat: no-repeat;
+}
+
+/*Wine Bottles*/
+aside{
+	height:350px;
+	background:green;
+}
+
+/*footer w/ small logo and (c)*/
+footer{
+	height:100px;
+	/*background:tan;*/
+	background-image: url("../images/bgfooter.png");
+/*	float:clear;*/
+/*	padding-right:10px;*/
+	padding-left:10px;
+	font-family:Playball;
+	color:darkkhaki;
+}
+
+/*Food Button - Attributes*/
+#t1vegetables, #t2softcheese, #t3hardcheese, #t4starches, #t5fish, #t6whitemeat, #t7redmeat, #t8sweets{
+	height:135px;
+	width:150px;
+}
+
+/*Wine Button - Attributes*/
+#b1drywhite, #b2sweetwhite, #b3richwhite, #b4sparkling, #b5lightred, #b6mediumred, #b7boldred, #b8dessert{
+	height:350px;
+	width:150px;
+}
+
+/*Base area to show the arrows when a Food item is clicked*/
+.arrow-down{
+	width:1230px;
+	height:490px;
+	/*display:inline-block;*/
+}
+
+/*8 arrows of Food going down, connecting to different Wines*/
+#bgt1{
+	background-image: url("../images/bgt1.png");
+}
+#bgt2{
+	background-image: url("../images/bgt2.png");
+
+}
+#bgt3{
+	background-image: url("../images/bgt3.png");
+	display:block;
+}
+#bgt4{
+	background-image: url("../images/bgt4.png");
+}
+#bgt5{
+	background-image: url("../images/bgt5.png");
+}
+#bgt6{
+	background-image: url("../images/bgt6.png");
+}
+#bgt7{
+	background-image: url("../images/bgt7.png");
+}
+#bgt8{
+	background-image: url("../images/bgt8.png");
+}
+
+/*basic (c) items. do we need for this assignment?*/
+#copyright-text{
+	opacity:0.4;
+	font-size: 18px;
+	font-weight: 400;
+/*	float:right;*/
+/*	padding-right: 10px;*/
+/*	height:-100px;
+	line-height: -100px;*/
+}
