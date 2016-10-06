@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>findmypho.com!</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Akronim|Frijole|Acme" rel="stylesheet">
+
+
+	<script src="js/jquery.js"></script>
+
+
+
+</head>
+<body>
+	<header><h1>findmypho.com</h1></header>
+	<p><h2>The site that geolocates the closest Pho Restaurant nearest to you!</h2></p>
+	<br>
+
+	<!--Show Search bar, & Buttons-->
+	<form>
+		<input type="text" id="new-entry" autofocus placeholder="What City?">
+		<p>
+			<button id="btn-location" title="show/hide buttons">Locations</button>
+			<button id="btn-search" title="search for cities">Search</button>
+		</p>
+	</form>
+	
+	<br><br>
+
+	<!--Show/Toggle City Buttons (based on "Locations" getting hit)-->
+	<section id="panel">
+		<button id="btn-losangeles">Los Angeles</button>
+		<button id="btn-torrance">Torrance</button>
+		<button id="btn-lamesa">La Mesa</button>
+		<button id="btn-southlaketahoe">South Lake Tahoe</button>
+		<button id="btn-westminster">Westminster</button>		
+		<br>
+		<button id="btn-lasvegas">Las Vegas</button>
+		<button id="btn-newyork">New York</button>
+		<button id="btn-peoria">Peoria</button>
+		<button id="btn-phoenix">Phoenix</button>
+		<button id="btn-sanfrancisco">San Francisco</button>
+	</section>
+
+	<br><br>
+
+	<!--Show Google Map-->
+	SHOW GOOGLE MAP HERE<
+	<aside id="google-map"></aside>
+
+	<!--Load JS/JQ scripts-->
+	<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
