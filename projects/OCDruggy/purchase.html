@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>OCDruggy.com</title>	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Rubik" rel="stylesheet">
+
+<!--<script src = "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="src/jquery.table2excel.js "></script> 
+	<script src="https://rawgit.com/unconditional/jquery-table2excel/master/src/jquery.table2excel.js"></script>-->
+
+</head>
+
+<body>
+	<!--Drop some nice header info here-->
+	<header>
+		<h1>Orange County Drug Pharmacy (OCDruggy)</h1>
+
+		<nav>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="login.html">Login</a></li>
+		  <li><a href="purchase.html">Purchase</a></li>
+		  <li><a href="register.html">Register</a></li>
+		</nav>
+
+	</header>
+
+	<!--Adding new users and list items into the form below-->
+	<form action="" method="post" id="add-new">
+		<p id="part-one">Add a New Item to the list below:</p>
+
+		<input type="text" class="" id="add-user" value="" name="" autofocus placeholder="Add User">
+		<button id="btn-user">Add User</button>Add a New User into the dropdown field below.<br>
+
+		<input type="text" class="" id="add-otc" value="" name="" autofocus placeholder="Add OTC">
+		<button id="btn-otc">Add OTC</button>Add a New Over the Counter item.<br>
+		
+		<input type="text" class="" id="add-food" value="" name="" autofocus placeholder="Add Food">
+		<button id="btn-food">Add Food</button>Add a New Food item to the list below.<br>
+		
+		<input type="text" class="" id="add-drink" value="" name="" autofocus placeholder="Add Drink">
+		<button id="btn-drink">Add Drink</button>Add a New Drink item to the list below.<br>
+
+	</form>
+	
+	<br>
+
+	<!--This will hold the main dropdown to add all the fields-->
+	<form action="" method="post" id="add-entry">
+		<p id="part-two">Add item to the list below. Then you can edit, delete or export individual line items or entire page.</p>
+		<!--(1/9) DATE selection-->
+		<input type="date" class="" id="select-date" value="" name="" autofocus placeholder="Date">
+		<!--(2/9) USER selection-->
+		<select class="" id="select-user" value="" name="" autofocus placeholder="Choose User"></select>		
+		<!--(3/9) RX selection-->
+		<input type="float" class="" id="select-rx" value="" name="" autofocus placeholder="Rx (#)">
+		<!--(4/9) OTC selection-->
+		<select class="" id="select-otc" value="" name="" autofocus placeholder="OTC selection"></select>
+		<!--(5/9) FOOD selection-->
+		<select class="" id="select-food" value="" name="" autofocus placeholder="Choose FOOD"></select>
+		<!--(6/9) DRINK selection-->
+		<select class="" id="select-drink" value="" name="" autofocus placeholder="Choose DRINK"></select>
+		<!--(7/9) NOTES selection-->
+		<input type="text" class="" id="select-note" value="" name="" autofocus placeholder="Add Notes">
+		<!--(8/9) PRICE manual addition (add additional)-->
+		<input type="float" class="" id="select-price" value="" name="" autofocus placeholder="Price ($$$)">		
+		<!--(9/9) ADD/SUBMIT button-->
+		<input type="submit" class="" id="select-submit" value="Submit" name="">
+	</form>
+
+	<!--This is where we display the "Submitted" items from above section, each time user clicks "SUBMIT" btn-->
+	<ul id="display-items">
+		<!-- (see .js file "grabSubmitSelection()")
+		<li>
+			<input type="checkbox" class="checkbox-btn">
+			<button class="edit-btn">Edit</button>
+			<button class="delete-btn">Delete</button> '
+			+ chosenSubmit +' 
+		</li>');
+		-->
+	</ul>
+	<form action="" method="post" id="bottom-btn">
+		<button class="btn-delete-selected">Delete Selected Items</button>
+		<button class="btn-delete-all">Delete All</button>
+		<button class="btn-export-selected">Export Selected Items</button>
+		<button class="btn-export-all">Export All</button>
+	<form action="" method="post" id="add-new">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+	<script src="https://rawgit.com/unconditional/jquery-table2excel/master/src/jquery.table2excel.js"></script>
+<!--	<script src="js/jquery.table2excel.js"></script>	-->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

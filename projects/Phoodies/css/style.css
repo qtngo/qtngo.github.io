@@ -1,0 +1,205 @@
+
+/******************************************************/
+/*The below Groups are used for Main Page & Body Items*/
+/******************************************************/
+*{
+	box-sizing: border-box;
+	margin-bottom: 5px;
+}
+
+body{
+	font-family: Calibri;
+	background: #F5F5F5;
+	color:darkslateblue;
+}
+
+/*Main body of the page, Section & Aside*/
+.primary,aside{
+	float:left;
+}
+
+h1,h2,h3,.firstcharacter{
+	/*https://fonts.google.com/?selection.family=Nunito*/
+	font-family: Nunito, sans-serif;
+	opacity:0.3;
+}
+
+/****************************************************/
+/*The below Groups are used for the Header & Footers*/
+/****************************************************/
+header,footer{
+	border:1px solid black;
+	height:100px;
+	background:gray;
+	margin-left:2%;
+	margin-right:2%;
+}
+
+header{
+	/*background-image:url("../images/pho-bg.png");
+	background-position: center;
+	background-size: 20%;*/
+	/*background-repeat: no-repeat;*/
+	/*background: LightSlateGray;*/
+	background-image:url("../images/header-banner.png");
+}
+
+#logo{
+	font-family: Chewy;
+	font-size: 70px;
+	font-style: italic;
+	font-weight: 600;
+	float:left;
+	color:#F5F5F5; /*same as bgcolor, but change opac*/
+	opacity:0.4;
+}
+
+nav{	
+	/*top:50%;*/
+	height:100px;
+	line-height: 100px;
+	padding-right: 10px;
+	float:right;
+}
+
+footer{
+	background-image:url("../images/footer-banner.png");
+	clear:left;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+#social-icon img{
+	width:40px;
+	height:40px;
+	font-weight:800;
+	opacity:0.9;
+}
+
+#copyright-text{
+	opacity:0.4;
+	font-size: 18px;
+	font-weight: 400;
+	float:right;
+	padding-right: 10px;
+	height:-100px;
+	line-height: -100px;
+}
+
+
+/***************************************************************/
+/*The below Groups are used for the Section/LEFT Panel/Articles*/
+/***************************************************************/
+.primary{
+	width: 65.5%;
+	margin-right:0.5%;
+	margin-left:2%;
+	/*background: blue;*/
+
+}
+
+/*Hover over crosshair*/
+img,a{
+	width:100%;
+	height:auto;
+	opacity: 0.8;
+	cursor:crosshair;
+}
+
+article{
+	background:#F5F5F5; /*whitesmoke*/
+	margin:2px;
+	padding:5px;
+
+}
+
+/*calling img after thumb nail to keep horizontally on page*/
+#thumb-nail img{ 
+	width:50px;
+	height:50px;
+}
+
+/*Used for drop cap - making first letter larger*/
+.firstcharacter { 
+	float: left; 
+	color: #903; 
+	font-size: 75px; 
+	line-height: 40px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+	/*font-family: Georgia;*/ /*using Nunito instead*/
+}
+
+/**********************************************************/
+/*The below Groups are used for the Aside/RIGHT Panel/DIVs*/
+/**********************************************************/
+aside{
+	width:30%;
+	background: silver;
+
+}
+
+div{
+	background:clear;
+	margin:5px;
+	padding:5px;
+}
+
+li{
+	display:inline-block;
+	background:azure;
+	padding-top:0px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	text-align:center;
+	top:50%;
+	border:2px solid aqua;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+#us-profile-pix{
+	width:90%;
+	height:auto;
+	margin-left:5%;
+	/*background-image:url("../images/us2.png");*/
+}
+
+/************************************************************/
+/*The below Groups are used for the Section (submit new btn)*/
+/************************************************************/
+
+.secondary{
+	float:left;
+	border:1px dotted darkgray;
+	height:80px;
+	background:silver;
+	margin-left:2%;
+	margin-right:2%;
+	width:96%;	
+	position:relative;
+}
+
+/*Next Button - All attributes used in each section 1-4 (next button)*/
+.new-article-btn{
+	font-family:"Calibri";
+	display:block;
+	width:200px;
+	height:40px;
+	/*border:3px solid #606161;	lightgrey*/
+	color: azure;
+	background: midnightblue;
+	/*border:2px solid aqua;*/
+	border-radius: 5px;
+	font-weight:900;
+	padding-top:10px;
+	text-decoration: none;		/*removes underline from the href="#"*/
+	position:absolute;
+	left:39%;
+	top:25%;
+}
+
+
+

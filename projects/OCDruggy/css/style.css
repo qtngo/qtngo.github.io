@@ -1,0 +1,146 @@
+/************************************************************************************/
+/*HEADER*/
+/************************************************************************************/
+header{
+	background-color: #323;
+	color:mintcream;
+	font-family: 'Rubik', sans-serif;
+	padding-top:0.1%;
+}
+
+/************************************************************************************/
+/*NAV*/
+/************************************************************************************/
+nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;		/*dark gray color*/
+	text-align: center;
+}
+
+nav li {
+	float:left;
+	width:25%;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #111;		/*on hover = black color*/
+	color:aqua;
+}
+
+/************************************************************************************/
+/*BODY, CONTENT*/
+/************************************************************************************/
+
+body {
+	font-size:16px;
+	font-family:calibri;
+	background-color:lightgray;
+}
+	
+ul {
+	list-style-type: none;	/*removes bullets from the LI after getting added*/
+}
+
+#add-new input, #add-entry input, #add-entry select{
+    border-radius: 4px;
+	height:20px;
+	padding:2px;
+	margin-bottom:2px;
+	font-size:12px;
+}
+
+#add-new input{
+	border: 2px solid #333;
+	width:20%;
+}
+
+#add-entry input, #add-entry select {
+	border: 2px solid #323;
+}
+
+
+#add-new button, #bottom-btn button{
+    background-color: mintcream;
+    color: #333;
+    border: 2px solid #e7e7e7;
+    font:bold;
+    font-size:12px;
+    border-radius:5px;
+    margin:2px;
+    width:100px;
+    padding:5px;
+
+}
+
+#add-new button:hover, #bottom-btn button:hover {
+	background-color: #e7e7e7;
+}
+	
+#bottom-btn button {
+	width:200px;
+}
+
+#display-items button {
+	border: 2px solid #323;
+	margin: 5px;
+	border-radius: 2px;
+}
+
+#part-one, #part-two {
+	background-color: #323;
+	height:40px;
+	color:mintcream;
+	padding-top:1%;
+	font-family: 'Rubik', sans-serif;
+}
+
+
+
+
+#login-page {
+	border: 2px solid #333;
+	padding: 10px;
+	border-radius:5px;
+	width:30%;
+}
+
+
+#login-page input{
+    border-radius: 4px;
+	height:20px;
+	padding:2px;
+	margin-bottom:2px;
+	font-size:12px;
+	border:2px solid #333;
+}
+
+#username, #password {
+	width:75%;
+}
+
+#signin button{
+    background-color: mintcream;
+    color: #333;
+    border: 2px solid #e7e7e7;
+    font:bold;
+    font-size:12px;
+    border-radius:5px;
+    margin:2px;
+    width:100px;
+    padding:5px;
+}
+
+#signin button:hover {
+	background-color: #e7e7e7;
+}
